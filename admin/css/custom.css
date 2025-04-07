@@ -1,0 +1,446 @@
+:root, [data-bs-theme=light] {
+    --dark-bg:#fff;
+    --card-bg:#e8e8e870;
+    --nav-bg: #e0e0e0;
+    --nav-link-color:#464646;
+    --bs-heading-color:#494949;
+    --icons-bg:#000000b5;
+    --active-nav:#757575c7;
+    --dropdown-link-color:#494949;
+    --bs-gray-dark:#c4c4c4;
+    --bs-gray-dark-selected:#ffffff;
+    --card-color:#494949;
+    --bs-table-color:var(--card-color);
+    --form-border:#fff;
+    --form-bg:#dadada;
+    --warning: #ff9b00;
+    --bagination-border:#939393;
+    --bagination-color:#35323f;
+    --bagination-bg:#dedede;
+    --bagination-active-bg:#c5c5c5;
+    --bagination-avtive-border:#707070 ;
+    --modal-bg: #dedede;
+    --modal-color:#545454;
+}
+
+:root, [data-bs-theme=dark] {
+    --dark-bg:#000;
+    --card-bg:#191c24;
+    --nav-bg: #191c24;
+    --nav-link-color:#6c7293;
+    --bs-heading-color:#fff;
+    --icons-bg:#6c729333;
+    --active-nav:#0f1015;
+    --dropdown-link-color:#fff;
+    --bs-gray-dark:#12151e;
+    --bs-gray-dark-selected:#1a1f30;
+    --card-color:#b6b6b6;
+    --bs-table-color:var(--card-color);
+    --form-border:#1b1c1f;
+    --form-bg:#2a3038;
+    --warning: #ffab00;
+    --bagination-border:#1d222f;
+    --bagination-color:#cacaca;
+    --bagination-bg:#4e4e4e;
+    --bagination-active-bg:#343434;
+    --bagination-avtive-border:#1f1f1f ;
+    --modal-bg: #16191f;
+    --modal-color:#cecece;
+}
+
+
+body{
+    font-family: "Baloo Bhaijaan 2", serif;
+}
+
+.navbar-profile-name{
+    font-weight: 400;
+    margin: 0 10px !important;
+}
+
+.sidebar .sidebar-brand-wrapper .sidebar-brand{
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar .sidebar-brand-wrapper .sidebar-brand:hover{
+    color: #afafaf;
+    text-decoration: none;
+}
+
+.sidebar .nav .nav-item .nav-link {
+    border-radius: 100px 0px 0px 100px;
+}
+
+.sidebar .nav .nav-item.active > .nav-link:before {
+    background: #0090e7;
+    right: 0;
+    top: 0;
+}
+.sidebar .nav .nav-item.active > .nav-link {
+    background: var(--active-nav);
+}
+.sidebar .nav:not(.sub-menu) > .nav-item:hover:not(.nav-category):not(.account-dropdown) > .nav-link {
+    background: var(--active-nav);
+}
+
+.sidebar .nav .nav-item {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.content-wrapper {
+    background: var(--dark-bg);
+}
+
+.card{
+    --bs-card-bg: var(--card-bg);
+    --bs-card-title-color: var(--dark-bg);
+}
+
+.rtl .navbar .navbar-menu-wrapper {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.navbar{
+    background: var(--nav-bg);
+}
+
+.sidebar{
+    background: var(--nav-bg);
+}
+
+.sidebar .sidebar-brand-wrapper {
+    background: var(--nav-bg);
+}
+
+.sidebar .nav .nav-item .nav-link {
+    color: var(--nav-link-color);
+}
+
+.card .card-title {
+    color: var(--bs-heading-color);
+}
+
+.sidebar .nav .nav-item .menu-icon {
+    background: var(--icons-bg);
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+    color: var(--bs-heading-color);
+}
+
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link .navbar-profile i {
+    color: var(--bs-heading-color);
+}
+
+.navbar .navbar-menu-wrapper {
+    color: var(--bs-heading-color);
+}
+
+.sidebar .sidebar-brand-wrapper .sidebar-brand {
+    color: var(--bs-heading-color);
+}
+
+.dropdown-menu {
+    background: var(--nav-bg);
+}
+
+.dropdown-item {
+    color: var(--dropdown-link-color);
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    background: var(--active-nav);
+}
+
+.navbar .navbar-brand-wrapper {
+    background: var(--nav-bg);
+}
+
+.card-body {
+    color: var(--card-color);
+}
+
+.table > :not(caption) > * > *, .jsgrid .jsgrid-table > :not(caption) > * > * {
+    color:var(--card-color);
+}
+
+.footer {
+    background: var(--dark-bg);
+}
+
+hr{
+    color: var(--bs-heading-color);
+    margin-bottom: 40px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    float: right;
+    padding-left: var(--bs-breadcrumb-item-padding-x);
+}
+
+.breadcrumb .breadcrumb-item.active {
+    color: var(--card-color);
+}
+
+.badge-outline-success {
+    color: #10964a;
+    border: 1px solid #0c9949;
+}
+
+.form-control,.form-select{
+    border: 1px solid var(--form-border) !important;
+    background-color: var(--form-bg) !important;
+    border-radius: 20px;
+    margin-top: 5px;
+    color:var(--bs-heading-color) !important;
+}
+
+.cpi-ext-txt{
+    border-top:1px solid var(--form-border);
+    border-bottom:1px solid var(--form-border);
+    background-color: var(--form-bg) !important;
+    height: 40px;
+    font-size: 14px;
+    padding: 0 15px;
+    width: 60px;
+    color: var(--card-t-col) !important;
+}
+
+.cpi-drop{
+    height: 40px;
+    border: 1px solid var(--form-border) !important;
+    border-left:0 !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    font-family: "Baloo Bhaijaan 2", serif;
+    background-color: var(--form-bg) !important;
+    color: var(--border-col) !important;
+    padding-left: 12px !important;
+}
+
+.phone-input{
+    height: 40px;
+    border-right:0 ;
+    border: 1px solid var(--form-border);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: -webkit-calc(100% - 116px);
+    width: calc(100% - 116px);
+    background-color: var(--form-bg);
+    padding-left: 10px;
+}
+
+.cpi-input{
+    width: 100%;
+    direction: ltr;
+    margin-top: 5px;
+}
+.cpi-input-focus .input-group {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-success {
+    --bs-btn-bg: #007f37;
+    --bs-btn-hover-bg: #0ea14e;
+}
+
+.table th, .jsgrid .jsgrid-table th, .table td, .jsgrid .jsgrid-table td {
+    font-size: 1rem;
+}
+
+.btn{
+    border-radius: 20px;
+}
+
+.badge{
+    border-radius: 20px;
+}
+.badge-outline-warning {
+    color: #835b0a;
+    border: 1px solid #ffab00;
+    background: #ebd2a7;
+}
+
+.badge-outline-danger {
+    color: #99272c;
+    border: 1px solid #fc424a;
+    background: #ffa2a6;
+}
+
+.badge-outline-success {
+    color: #005a27;
+    border: 1px solid #0c9949;
+    background: #abf999;
+}
+
+.badge-outline-info {
+    color: #381577;
+    border: 1px solid #8f5fe8;
+    background: #bf83d1;
+}
+
+.card-icon{
+    font-size: 55px;
+}
+
+.text-success{
+    color: #22b562 !important;
+}
+
+.text-warning{
+    color: var(--warning) !important;
+}
+
+.page-title {
+    color: var(--bs-heading-color);
+}
+
+.multi-upload{
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    border: 3px dashed var(--card-color);
+    border-radius: 20px;
+    background: var(--bs-gray-dark);
+    cursor: pointer;
+}
+
+.uploaded-files{
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.file-uploaded{
+    position: relative;
+    padding: 10px;
+    border: 2px solid var(--card-color);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    color: var(--bs-heading-color);
+    background: var(--form-border);
+}
+
+.direct-app{
+    width: 95%;
+    margin: auto;
+    border: 3px dashed var(--card-color);
+    border-radius: 20px;
+    background: var(--bs-gray-dark);
+    padding: 20px;
+}
+
+.payment-tab{
+    border: 1px solid var(--card-color);
+    border-radius: 20px;
+    background: var(--bs-gray-dark-selected);
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.active-tab{
+    background: var(--bs-gray-dark);
+}
+
+.swal2-modal .swal2-content {
+    color: #5e5e5e;
+}
+
+.swal2-modal .swal2-title {
+    color: #5e5e5e;
+}
+.swal2-styled.swal2-confirm {
+    border-radius: 10px !important;
+}
+
+.pagination {
+    direction: ltr;
+    margin: 20px;
+}
+
+.pagination .page-item .page-link, .jsgrid .jsgrid-pager .page-item .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page a {
+    border-color: var(--bagination-border);
+    color: var(--bagination-color);
+    background: var(--bagination-bg);
+}
+
+.pagination .page-item.active .page-link, .pagination .page-item.active .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .pagination .page-item.active .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item.active .page-link, .jsgrid .jsgrid-pager .page-item.active .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item.active a, .jsgrid .jsgrid-pager .page-item.active .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item.active a, .jsgrid .jsgrid-pager .active.jsgrid-pager-nav-button .page-link, .jsgrid .jsgrid-pager .active.jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .active.jsgrid-pager-page .page-link, .jsgrid .jsgrid-pager .active.jsgrid-pager-page a, .pagination .page-item:hover .page-link, .pagination .page-item:hover .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .pagination .page-item:hover .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item:hover .page-link, .jsgrid .jsgrid-pager .page-item:hover .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:hover a, .jsgrid .jsgrid-pager .page-item:hover .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:hover a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:hover .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:hover a, .jsgrid .jsgrid-pager .jsgrid-pager-page:hover .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page:hover a, .pagination .page-item:focus .page-link, .pagination .page-item:focus .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .pagination .page-item:focus .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item:focus .page-link, .jsgrid .jsgrid-pager .page-item:focus .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:focus a, .jsgrid .jsgrid-pager .page-item:focus .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:focus a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:focus .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:focus a, .jsgrid .jsgrid-pager .jsgrid-pager-page:focus .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page:focus a, .pagination .page-item:active .page-link, .pagination .page-item:active .jsgrid .jsgrid-pager .jsgrid-pager-nav-button a, .pagination .page-item:active .jsgrid .jsgrid-pager .jsgrid-pager-page a, .jsgrid .jsgrid-pager .page-item:active .page-link, .jsgrid .jsgrid-pager .page-item:active .jsgrid-pager-nav-button a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button .page-item:active a, .jsgrid .jsgrid-pager .page-item:active .jsgrid-pager-page a, .jsgrid .jsgrid-pager .jsgrid-pager-page .page-item:active a, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:active .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-nav-button:active a, .jsgrid .jsgrid-pager .jsgrid-pager-page:active .page-link, .jsgrid .jsgrid-pager .jsgrid-pager-page:active a {
+    background: var(--bagination-active-bg);
+    border-color: var(--bagination-avtive-border);
+    color: var(--bagination-color);
+}
+
+.modal-content {
+    background-color: var(--modal-bg);
+    color: var(--modal-color);
+}
+.invalid-feedback{
+    display: block !important;
+}
+
+.toast{
+    position: fixed !important;
+    display: block !important;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.drop-app{
+    padding: 0 !important;
+    align-items: center !important;
+}
+
+.icon-apps{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+input[type="color"] {
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.toaster{
+    position: fixed;
+    z-index: 100;
+    top:100px;
+    left: 10px;
+    padding: 20px;
+    border: 1px solid #818181d9;
+    border-radius: 10px;
+    display: none;
+}
+
+.toast-green{
+    background-color: #14731bd4;
+}
+
+.toast-red{
+    background-color: #8f1f1fd4;
+}
+
+.toast-body a{
+    color: black;
+}
+
+.rtl .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.app-card-admin{
+    background: var(--bs-gray-dark);
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    border:1px solid #a1a1a1;
+}
